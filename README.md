@@ -44,32 +44,32 @@
 ---
 
 ## Инструкция по установке libpqxx
-**1. Откройте `Пуск->Изменение системных переменных среды->Переменные среды`**
-**2. Создайте новую системную переменную с именем `PostgreSQL_ROOT`
-   и укажите путь `C:/Program Files/PostgreSQL/<Your version PostgreSQL>`**
-**3. Через менеджер пакетов vcpkg установите libpqxx**
-   ```bash
-   vcpkg install libpqxx:x64-windows
-   ```
-
-**4. Включите использование библиотек в Visual Studio и CMake**
-   ```bash
-   vcpkg integrate install
-   ``` 
+  1. **Откройте `Пуск->Изменение системных переменных среды->Переменные среды`**
+  2. **Создайте новую системную переменную с именем `PostgreSQL_ROOT`
+     и укажите путь `C:/Program Files/PostgreSQL/<Your version PostgreSQL>`**
+  3. **Через менеджер пакетов vcpkg установите libpqxx**
+     ```bash
+     vcpkg install libpqxx:x64-windows
+     ```
+  
+  4. **Включите использование библиотек в Visual Studio и CMake**
+     ```bash
+     vcpkg integrate install
+     ``` 
 
 ## Сборка проекта
 
-1.  **Клонирование репозитория:**
-    ```bash
-    git clone https://github.com/Kirius257/libpqxx_app
-    cd libpqxx_app
-    ```
-
-2.  **Создание системы сборки и
-      подключение vcpkg к проекту:**
-    ```bash
-    cmake .. -DCMAKE_TOOLCHAIN_FILE="C:/vcpkg/scripts/buildsystems/vcpkg.cmake"
-    ```
+  1.  **Клонирование репозитория:**
+      ```bash
+      git clone https://github.com/Kirius257/libpqxx_app
+      cd libpqxx_app
+      ```
+  
+  2.  **Создание системы сборки и
+        подключение vcpkg к проекту:**
+      ```bash
+      cmake .. -DCMAKE_TOOLCHAIN_FILE="C:/vcpkg/scripts/buildsystems/vcpkg.cmake"
+      ```
 
 3.  **Сборка проекта**
     ```bash
