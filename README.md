@@ -44,9 +44,12 @@
 ---
 
 ## Инструкция по установке libpqxx
+
   1. **Откройте `Пуск->Изменение системных переменных среды->Переменные среды`**
+     
   2. **Создайте новую системную переменную с именем `PostgreSQL_ROOT`
      и укажите путь `C:/Program Files/PostgreSQL/<Your version PostgreSQL>`**
+     
   3. **Через менеджер пакетов vcpkg установите libpqxx**
      ```bash
      vcpkg install libpqxx:x64-windows
