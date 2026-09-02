@@ -1,4 +1,4 @@
-# PostgreSQL C++ application with using libpqxx
+# PostgreSQL C++ приложение с использованием libpqxx
 ---
 
 ## Содержание проекта
@@ -61,8 +61,8 @@
 
 1.  **Клонирование репозитория:**
     ```bash
-    git clone https://github.com/Kirius257/PostgreSQL-Client.git
-    cd PostgreSQL-Client
+    git clone https://github.com/Kirius257/libpqxx_app
+    cd libpqxx_app
     ```
 
 2.  **Создание системы сборки и
